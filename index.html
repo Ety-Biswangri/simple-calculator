@@ -14,7 +14,11 @@
 </head>
 
 <body>
-    <h1 class="text-center my-5">Simple Javascript Calculator!</h1>
+    <header>
+        <h1 style="background-color: #6A1B4D;" class="text-center mb-5 p-5 text-white">
+            Simple Javascript Calculator!
+        </h1>
+    </header>
 
     <div class="calculator">
         <form action="" name="form">
@@ -22,13 +26,13 @@
 
             <div class="button-area">
                 <div class="line">
-                    <input type="button" name="btn" value="7" class="btn btn-primary number-btn" id="number7"
+                    <input type="button" name="btn" value="7" class="btn btn-primary number-btn"
                         onclick="calculate(event.target.value)">
                     <input type="button" name="btn" value="8" class="btn btn-primary number-btn"
                         onclick="calculate(event.target.value)">
                     <input type="button" name="btn" value="9" class="btn btn-primary number-btn"
                         onclick="calculate(event.target.value)">
-                    <input type="button" name="btn" value="*" class="btn btn-warning number-btn"
+                    <input type="button" name="btn" value="*" class="btn btn-warning number-btn-special"
                         onclick="calculate(event.target.value)">
                 </div>
                 <div class="line">
@@ -38,7 +42,7 @@
                         onclick="calculate(event.target.value)">
                     <input type="button" name="btn" value="6" class="btn btn-primary number-btn"
                         onclick="calculate(event.target.value)">
-                    <input type="button" name="btn" value="-" class="btn btn-warning number-btn"
+                    <input type="button" name="btn" value="-" class="btn btn-warning  number-btn-special"
                         onclick="calculate(event.target.value)">
                 </div>
                 <div class="line">
@@ -48,7 +52,7 @@
                         onclick="calculate(event.target.value)">
                     <input type="button" name="btn" value="3" class="btn btn-primary number-btn"
                         onclick="calculate(event.target.value)">
-                    <input type="button" name="btn" value="+" class="btn btn-warning number-btn"
+                    <input type="button" name="btn" value="+" class="btn btn-warning number-btn-special"
                         onclick="calculate(event.target.value)">
                 </div>
                 <div class="line">
@@ -56,14 +60,15 @@
                         onclick="calculate(event.target.value)">
                     <input type="button" name="btn" value="00" class="btn btn-primary number-btn"
                         onclick="calculate(event.target.value)">
-                    <input type="button" name="btn" value="." class="btn btn-primary number-btn"
+                    <input type="button" name="btn" value="." class="btn btn-warning number-btn-special"
                         onclick="calculate(event.target.value)">
-                    <input type="button" name="btn" value="/" class="btn btn-warning number-btn"
+                    <input type="button" name="btn" value="/" class="btn btn-warning number-btn-special"
                         onclick="calculate(event.target.value)">
                 </div>
                 <div class="last">
-                    <input type="button" name="btn" value="AC" class="btn btn-warning" onclick="display.value = null">
-                    <input type="button" name="btn" value="=" class="btn btn-warning"
+                    <input type="button" name="btn" value="AC" class="btn btn-success other-btn fw-bold"
+                        onclick="display.value = null">
+                    <input type="button" name="btn" value="=" class="btn btn-success other-btn fw-bold"
                         onclick="display.value = eval(display.value)">
                 </div>
             </div>

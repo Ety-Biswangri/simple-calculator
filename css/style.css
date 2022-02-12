@@ -1,7 +1,8 @@
 .calculator{
     height: 365px;
     width: 280px;
-    background-color: #e8e8e8;
+    /* background-color: #e8e8e8; */
+    background-color: #03203C;
     margin: 0 auto;
     margin-top: 50px;
     padding: 10px;
@@ -9,7 +10,6 @@
 }
 
 .display-bar{
-    margin-top: 10px;
     margin-bottom: 20px;
     text-align: right;
 }
@@ -19,6 +19,23 @@
     cursor: pointer;
     width: 53px;
     margin-left: 6px;
+    background-color: #383CC1;
+    color: white;
+}
+
+.other-btn{
+    background-color: #1FAA59;
+    color: white
+}
+
+.number-btn-special{
+    font-size: 20px;
+    cursor: pointer;
+    width: 53px;
+    margin-left: 6px;
+    background-color: #E49B0F;
+    color: black;
+    font-weight: 600;
 }
 
 .line{
